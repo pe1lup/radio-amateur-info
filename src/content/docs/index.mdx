@@ -1,0 +1,84 @@
+---
+title: Radio Amateur Info
+description: Wat zijn de mogelijkheden voor digitale communicatie voor de zendamateur?
+template: splash
+hero:
+  title: Digitale communicatie voor de zendamateur
+  tagline: Wat zijn de mogelijkheden? Van APRS en FT8 tot PACTOR en professionele modi - een praktische wiki voor de Nederlandse zendamateur.
+  actions:
+    - text: Digitale amateur modes
+      link: /digitale-amateur-modes/
+      icon: right-arrow
+      variant: primary
+    - text: Professionele modes
+      link: /digitale-professionele-mode/
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Wat vind je hier?
+
+Deze wiki geeft een overzicht van digitale communicatiemodi die worden gebruikt - of werden gebruikt - in de amateurradio. Elke pagina beschrijft de technische werking, de frequenties waarop een modus actief is, en de software waarmee je ermee aan de slag kunt.
+
+Het doel is simpel: **een Nederlandstalig naslagwerk** voor de zendamateur die wil weten welke digitale modi beschikbaar zijn, hoe ze werken en wat je ermee kunt.
+
+---
+
+## Twee hoofdcategorieën
+
+<CardGrid>
+  <Card title="Digitale amateur modes" icon="radio">
+    Modi ontwikkeld voor en door de amateurradiobeweging. Denk aan APRS voor positierapportage, FT8 en FT4 voor zwak-signaalcommunicatie, PSK31 voor tekstberichten, PACTOR voor betrouwbare datatransfer, en tientallen andere.
+
+    [Bekijk alle amateur modes →](/digitale-amateur-modes/)
+  </Card>
+  <Card title="Digitale professionele mode" icon="document">
+    Modi die historisch werden gebruikt door overheid, politie, douane en militaire diensten. Coquelet is een voorbeeld: een Belgisch MFSK-systeem uit de jaren zestig dat door radiomonitoren nog steeds kan worden gedecodeerd.
+
+    [Bekijk professionele modes →](/digitale-professionele-mode/)
+  </Card>
+</CardGrid>
+
+---
+
+## Een greep uit de behandelde modi
+
+### Populaire amateur modes
+
+| Modus | Toepassing | Bijzonderheid |
+|-------|-----------|---------------|
+| **FT8** | Zwak-signaal DX | Decodeert tot −21 dB S/N; veruit de meest gebruikte digitale modus |
+| **FT4** | Wedstrijden | 2,5× sneller dan FT8, ideaal voor contestoperaties |
+| **APRS** | Positierapportage & messaging | Koppelt radio aan internet; wereldwijd netwerk op 144.800 MHz |
+| **PSK31 / BPSK31** | Tekstcommunicatie | Smal (80 Hz), efficiënt bij HF; creatie van G3PLX |
+| **PACTOR I–IV** | Betrouwbare datatransfer | ARQ-protocol; door Winlink gebruikt voor e-mail via radio |
+| **RTTY** | Teletype over radio | Klassieke modus, nog steeds populair in wedstrijden |
+| **JS8Call** | Berichtgeving & mesh-netwerk | Variant op FT8 met volledige tekstberichten |
+| **Packet Radio** | Data en e-mail | Basis van APRS; AX.25-protocol op VHF/UHF |
+| **MT63** | Robuuste tekstmode | Breed gespreid signaal, goed bestand tegen storingen |
+| **Olivia / Contestia** | Zwak signaal, tekst | Zeer robuust MFSK; decodeert ver onder het ruisniveau |
+| **DominoEX** | HF tekstcommunicatie | IFK-modulatie; zelfsynchroniserend, driftbestendig |
+| **CW (Morse)** | Traditioneel, wedstrijden | Digitaal decodeerbaar; de oudste modus die nog actief is |
+
+### Historische en professionele modi
+
+| Modus | Gebruiker | Periode |
+|-------|----------|---------|
+| **Coquelet-8 / 13 / 80** | Politie, douane, leger (BE/FR/DZ) | Jaren '60–'90 |
+| **AMTOR / SITOR** | Maritiem en amateurradio | Jaren '80–'90 |
+| **ASCII (110 baud)** | Amateurradio | Jaren '80–'90 |
+
+---
+
+## Hoe is de wiki opgebouwd?
+
+Elke moduspagina bevat:
+
+- **Technische specificaties** - baudrate, bandbreedte, modulatietype, S/N-drempel
+- **Frequenties** - de aanbevolen of standaard frequenties per band
+- **Software** - links naar programma's waarmee je de modus kunt gebruiken of decoderen
+
+---
+
+*Contact: [info@delta-tech.nl](mailto:info@delta-tech.nl)*

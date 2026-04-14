@@ -1,41 +1,48 @@
-# Website
+# Radio Amateur Info
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Een Nederlandstalige wiki over digitale communicatiemogelijkheden voor de zendamateur.
 
-### Installation
+**Wat zijn de mogelijkheden voor digitale communicatie voor de zendamateur?** Die vraag staat centraal. De wiki biedt een overzicht van zowel amateur- als professionele digitale modi, met technische specificaties, frequenties en software per modus.
 
-```
-$ yarn
-```
+## Inhoud
 
-### Local Development
+- **[Digitale amateur modes](src/content/docs/digitale-amateur-modes.md)** - APRS, FT8, FT4, PSK31, PACTOR, RTTY, Olivia, DominoEX, CW en meer
+- **[Digitale professionele mode](src/content/docs/digitale-professionele-mode.md)** - Coquelet en andere historische overheidsmodi
 
-```
-$ yarn start
-```
+## Technologie
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+- [AstroJS](https://astro.build) met [Starlight](https://starlight.astro.build) documentatiethema
+- Statische site, gedeployd op GitHub Pages
 
-### Build
+## Lokale ontwikkeling
 
-```
-$ yarn build
-```
+Vereisten: [Node.js](https://nodejs.org) ≥ 18 en [pnpm](https://pnpm.io)
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```bash
+pnpm install
+pnpm dev
 ```
 
-Not using SSH:
+De site draait dan op `http://localhost:4321`.
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+## Bouwen
+
+```bash
+pnpm build
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+De statische output staat in `dist/`.
+
+## Inhoud aanpassen
+
+Alle pagina's staan als Markdown-bestanden in `src/content/docs/`:
+
+| Bestand | Pagina |
+|---------|--------|
+| `index.mdx` | Homepage |
+| `digitale-amateur-modes.md` | Amateur modes |
+| `digitale-professionele-mode.md` | Professionele modes |
+
+## Deployment
+
+De site wordt automatisch gebouwd en gepubliceerd via GitHub Actions bij elke push naar `main`.
