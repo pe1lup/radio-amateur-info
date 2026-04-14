@@ -1,0 +1,9 @@
+/* Table of contents: h3 entries (depth 1) — matching green page headings */
+starlight-toc a[style*="--depth: 1"] {
+  color: #008000;
+}
+
+/* Table of contents: h4 entries (depth 2) — matching blue page headings */
+starlight-toc a[style*="--depth: 2"] {
+  color: #0000ff;
+}
