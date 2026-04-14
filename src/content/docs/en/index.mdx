@@ -1,0 +1,84 @@
+---
+title: Radio Amateur Info
+description: What are the possibilities for digital communication for the radio amateur?
+template: splash
+hero:
+  title: Digital communication for the radio amateur
+  tagline: What are the possibilities? From APRS and FT8 to PACTOR and professional modes - a practical wiki for the radio amateur.
+  actions:
+    - text: Digital amateur modes
+      link: /en/digitale-amateur-modes/
+      icon: right-arrow
+      variant: primary
+    - text: Professional modes
+      link: /en/digitale-professionele-mode/
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## What will you find here?
+
+This wiki provides an overview of digital communication modes used - or historically used - in amateur radio. Each page describes the technical operation, the frequencies on which a mode is active, and the software you can use to get started.
+
+The goal is simple: **a reference work** for the radio amateur who wants to know which digital modes are available, how they work, and what you can do with them.
+
+---
+
+## Two main categories
+
+<CardGrid>
+  <Card title="Digital amateur modes" icon="radio">
+    Modes developed for and by the amateur radio community. Think of APRS for position reporting, FT8 and FT4 for weak-signal communication, PSK31 for text messages, PACTOR for reliable data transfer, and dozens of others.
+
+    [View all amateur modes →](/en/digitale-amateur-modes/)
+  </Card>
+  <Card title="Digital professional modes" icon="document">
+    Modes historically used by government, police, customs and military services. Coquelet is an example: a Belgian MFSK system from the 1960s that can still be decoded by radio monitors today.
+
+    [View professional modes →](/en/digitale-professionele-mode/)
+  </Card>
+</CardGrid>
+
+---
+
+## A selection of covered modes
+
+### Popular amateur modes
+
+| Mode | Application | Highlight |
+|------|-------------|-----------|
+| **FT8** | Weak-signal DX | Decodes down to −21 dB S/N; by far the most widely used digital mode |
+| **FT4** | Contests | 2.5× faster than FT8, ideal for contest operations |
+| **APRS** | Position reporting & messaging | Links radio to the internet; worldwide network on 144.800 MHz |
+| **PSK31 / BPSK31** | Text communication | Narrow (80 Hz), efficient on HF; created by G3PLX |
+| **PACTOR I–IV** | Reliable data transfer | ARQ protocol; used by Winlink for email via radio |
+| **RTTY** | Teletype over radio | Classic mode, still popular in contests |
+| **JS8Call** | Messaging & mesh network | FT8 variant with full text messages |
+| **Packet Radio** | Data and email | Basis of APRS; AX.25 protocol on VHF/UHF |
+| **MT63** | Robust text mode | Widely spread signal, resistant to interference |
+| **Olivia / Contestia** | Weak signal, text | Very robust MFSK; decodes well below the noise floor |
+| **DominoEX** | HF text communication | IFK modulation; self-synchronising, drift-resistant |
+| **CW (Morse)** | Traditional, contests | Digitally decodable; the oldest mode still in active use |
+
+### Historical and professional modes
+
+| Mode | User | Period |
+|------|------|--------|
+| **Coquelet-8 / 13 / 80** | Police, customs, military (BE/FR/DZ) | 1960s–1990s |
+| **AMTOR / SITOR** | Maritime and amateur radio | 1980s–1990s |
+| **ASCII (110 baud)** | Amateur radio | 1980s–1990s |
+
+---
+
+## How is the wiki structured?
+
+Each mode page contains:
+
+- **Technical specifications** - baud rate, bandwidth, modulation type, S/N threshold
+- **Frequencies** - the recommended or standard frequencies per band
+- **Software** - links to programs you can use to operate or decode the mode
+
+---
+
+*Contact: [info@delta-tech.nl](mailto:info@delta-tech.nl)*
